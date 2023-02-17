@@ -1,0 +1,203 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for Failed to commit area from 0x0000000081400000 to 0x0000000089400000 of length 134217728.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/os/windows/os_windows.cpp:3301), pid=21188, tid=1496
+#
+# JRE version:  (13.0.2+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (13.0.2+8, mixed mode, aot, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: org.jetbrains.kotlin.cli.jvm.K2JVMCompiler @E:\Glowup-customer-2.0\glowup\node_modules\react-native-gesture-handler\android\build\20230130_17521224197002330065.compiler.options
+
+Host: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.2364)
+Time: Mon Jan 30 19:52:12 2023 India Standard Time elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e9d856f000):  JavaThread "Unknown thread" [_thread_in_vm, id=1496, stack(0x0000005a00700000,0x0000005a00800000)]
+
+Stack: [0x0000005a00700000,0x0000005a00800000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x624f9a]
+V  [jvm.dll+0x770cfa]
+V  [jvm.dll+0x7724af]
+V  [jvm.dll+0x772ab3]
+V  [jvm.dll+0x24bf08]
+V  [jvm.dll+0x6222aa]
+V  [jvm.dll+0x6170b5]
+V  [jvm.dll+0x30a88c]
+V  [jvm.dll+0x30a6c2]
+V  [jvm.dll+0x30fe36]
+V  [jvm.dll+0x353f46]
+V  [jvm.dll+0x353720]
+V  [jvm.dll+0x2e550a]
+V  [jvm.dll+0x2e67a2]
+V  [jvm.dll+0x74dd78]
+V  [jvm.dll+0x361989]
+V  [jvm.dll+0x730e65]
+V  [jvm.dll+0x3cc53f]
+V  [jvm.dll+0x3ce861]
+C  [jli.dll+0x51ff]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17614]
+C  [ntdll.dll+0x526a1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fff4047ccb8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001e9d85b1000 GCTaskThread "GC Thread#0" [stack: 0x0000005a00800000,0x0000005a00900000] [id=14268]
+  0x000001e9d85c2800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000005a00900000,0x0000005a00a00000] [id=21436]
+  0x000001e9d85c4000 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000005a00a00000,0x0000005a00b00000] [id=19988]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff3fcb51d7]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001e9d856b8c0] Heap_lock - owner thread: 0x000001e9d856f000
+
+Heap address: 0x0000000081400000, size: 2028 MB, Compressed Oops mode: Non-zero based: 0x0000000081400000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (8 events):
+Event: 0.122 Loaded shared library C:\Program Files\Java\jdk-13.0.2\bin\zip.dll
+Event: 0.123 Loaded shared library C:\Program Files\Java\jdk-13.0.2\bin\jimage.dll
+Event: 0.128 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjava.base-coop.dll failed, error code 126
+Event: 0.128 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjava.logging-coop.dll failed, error code 126
+Event: 0.129 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjdk.compiler-coop.dll failed, error code 126
+Event: 0.129 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjdk.scripting.nashorn-coop.dll failed, error code 126
+Event: 0.129 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjdk.internal.vm.ci-coop.dll failed, error code 126
+Event: 0.129 Loading shared library C:\Program Files\Java\jdk-13.0.2\lib\libjdk.internal.vm.compiler-coop.dll failed, error code 126
+
+
+Dynamic libraries:
+0x00007ff740550000 - 0x00007ff74055f000 	C:\Program Files\Java\jdk-13.0.2\bin\java.exe
+0x00007fff91770000 - 0x00007fff91968000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff8f760000 - 0x00007fff8f81f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff8f2f0000 - 0x00007fff8f5c2000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff8f660000 - 0x00007fff8f760000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fff8a7f0000 - 0x00007fff8a808000 	C:\Program Files\Java\jdk-13.0.2\bin\jli.dll
+0x00007fff88ab0000 - 0x00007fff88ac5000 	C:\Program Files\Java\jdk-13.0.2\bin\VCRUNTIME140.dll
+0x00007fff91680000 - 0x00007fff9172e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff914f0000 - 0x00007fff9158e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff8f820000 - 0x00007fff8f8bc000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff90b90000 - 0x00007fff90cb5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff907f0000 - 0x00007fff90991000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff8efb0000 - 0x00007fff8efd2000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff74360000 - 0x00007fff745fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fff8feb0000 - 0x00007fff8fedb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff8f1e0000 - 0x00007fff8f2ef000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff8ee10000 - 0x00007fff8eead000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fff915b0000 - 0x00007fff915ba000 	C:\WINDOWS\System32\VERSION.dll
+0x00007fff909d0000 - 0x00007fff90a02000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fff6f160000 - 0x00007fff6f1fb000 	C:\Program Files\Java\jdk-13.0.2\bin\msvcp140.dll
+0x00007fff3f9c0000 - 0x00007fff4051d000 	C:\Program Files\Java\jdk-13.0.2\bin\server\jvm.dll
+0x00007fff909c0000 - 0x00007fff909c9000 	C:\WINDOWS\System32\WSOCK32.dll
+0x00007fff91410000 - 0x00007fff9147b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fff91480000 - 0x00007fff91488000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007fff77330000 - 0x00007fff77357000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff8d8b0000 - 0x00007fff8d8c2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fff8a8a0000 - 0x00007fff8a8b0000 	C:\Program Files\Java\jdk-13.0.2\bin\verify.dll
+0x00007fff8cc80000 - 0x00007fff8ce64000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fff77d00000 - 0x00007fff77d35000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fff8f5d0000 - 0x00007fff8f652000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fff85c40000 - 0x00007fff85c66000 	C:\Program Files\Java\jdk-13.0.2\bin\java.dll
+0x00007fff88820000 - 0x00007fff88837000 	C:\Program Files\Java\jdk-13.0.2\bin\zip.dll
+0x00007fff8a840000 - 0x00007fff8a84a000 	C:\Program Files\Java\jdk-13.0.2\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-13.0.2\bin\server
+
+VM Arguments:
+java_command: org.jetbrains.kotlin.cli.jvm.K2JVMCompiler @E:\Glowup-customer-2.0\glowup\node_modules\react-native-gesture-handler\android\build\20230130_17521224197002330065.compiler.options
+java_class_path (initial): C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.5.20\1900e8b9aca0a9caffd45b99b36e3720a0a284f8\kotlin-compiler-embeddable-1.5.20.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.5.20\63810951f09a27f7827977f1bc21094042a915e\kotlin-reflect-1.5.20.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.5.20\9de35cc611bcecec8edce1d56d8e659953806751\kotlin-stdlib-1.5.20.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\1.5.20\4381bb58d37b84d4d1afe55ec35542dd9b77e101\kotlin-script-runtime-1.5.20.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-embeddable\1.5.20\36c38cda019834dcd2959cc33a12768adcd94256\kotlin-daemon-embeddable-1.5.20.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.intellij.deps\trove4j\1.0.20181211\216c2e14b070f334479d800987affe4054cd563f\trove4j-1.0.20181211.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Users\Ashish yadav\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.5.20\3d79dbd48bf605f4aac1e7028981a1953e245cbb\kotlin-stdlib-common-1.5.20.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 134217728                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2126512128                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2126512128                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+CLASSPATH=E:\Glowup-customer-2.0\glowup\android\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\Wbem;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-13.0.2\bin;C:\apache-ant-1.9.14\bin;%JAVA_HOME%\bin;C:\Users\Ashish yadav\AppData\Local\Programs\Python\Python38-32;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\xampp\php;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\Wbem;E:\xampp\php;C:\composer;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\Ashish yadav\AppData\Local\Programs\Python\Python310;C:\Users\Ashish yadav\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Ashish yadav\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Ashish yadav\AppData\Local\Programs\Python\Python310\;C:\Users\Ashish yadav\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.1\bin;C:\Users\Ashish yadav\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ashish yadav\AppData\Local\GitHubDesktop\bin;C:\Users\Ashish yadav\AppData\Roaming\npm;C:\xampp\php;C:\Users\Ashish yadav\AppData\Local\ComposerSetup\bin;C:\Users\Ashish yadav\AppData\Roaming\Composer\vendor\bin;C:\Program Files\MongoDB\Server\4.4\bin;D:\flutter\bin;C:\Program Files\heroku\bin;C:\Users\Ashish yadav\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.3\bin
+USERNAME=Ashish yadav
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.2364)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 8107M (261M free)
+TotalPageFile size 13075M (AvailPageFile size 66M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 60M, peak: 188M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (13.0.2+8) for windows-amd64 JRE (13.0.2+8), built on Dec 11 2019 09:20:33 by "mach5one" with unknown MS VC++:1916
+
+END.

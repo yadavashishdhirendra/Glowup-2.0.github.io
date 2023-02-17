@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68906101466",
+    "project_id": "glowup-salons-1a7ca",
+    "storage_bucket": "glowup-salons-1a7ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68906101466:android:79a1015bf328694ec693e3",
+        "android_client_info": {
+          "package_name": "com.glowUp.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68906101466-57vmtb4o5u8idf6a3of54tfc0q5ig1tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCppXL67JvrUHJbhKu_SBU0yUzkwwei09M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68906101466-57vmtb4o5u8idf6a3of54tfc0q5ig1tv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
